@@ -21,8 +21,17 @@ class TestGradeStudent(unittest.TestCase):
     # - Use assertEqual for grades and assertRaises for invalid scores.
     #
     # write your tests here
-    pass
-
+    def test_grade_student(self):
+        self.assertEqual(grade_student(95), "A")
+    def test_grade_student(self):
+        self.assertEqual(grade_student(85), "B")
+    def test_grade_student(self):
+        self.assertEqual(grade_student(75), "C")
+    def test_grade_student(self):
+        self.assertEqual(grade_student(65), "D")
+    def test_grade_student(self):
+        self.assertEqual(grade_student(30), "F")
+    
 
 if __name__ == "__main__":
     unittest.main()
